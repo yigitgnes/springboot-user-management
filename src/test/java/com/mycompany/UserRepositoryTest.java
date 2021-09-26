@@ -1,23 +1,17 @@
 package com.mycompany;
 
-import com.mycompany.user.User;
-import com.mycompany.user.UserRepository;
-import org.junit.jupiter.api.Assertions;
+import com.mycompany.model.User;
+import com.mycompany.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
-import org.assertj.core.api.WithAssertions;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
-
-
 
 
 @DataJpaTest
